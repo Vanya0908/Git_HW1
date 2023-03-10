@@ -1,0 +1,122 @@
+Посмотреть где я:
+pwd
+
+Создать папку:
+mkdir folder_1
+
+Зайти в папку:
+cd folder_1
+
+Создать 3 папки:
+mkdir folder_3 folder_4 folder_5
+
+Зайти в любоую папку:
+cd folder_3
+
+Создать 5 файлов (3 txt, 2 json):
+touch file1.txt file2.txt file3.txt file1.json file2.json
+
+Создать 3 папки:
+mkdir folder_3 folder_4 folder_5
+
+Вывести список содержимого папки:
+ls -la
+
+Открыть любой txt файл:
+vim file1.txt
+
+Написать туда что-нибудь, любой текст:
+i-режим редактирования
+
+Сохранить и выйти:
+esc-выйти из режима редактирования :wq
+
+Выйти из папки на уровень выше:
+cd ..
+
+Переместить любые 2 файла, которые вы создали, в любую другую папку:
+mv file1.txt file_1.txt /d/gitbash2/group_27/folder_3
+
+Скопировать любые 2 файла, которые вы создали, в любую другую папку:
+cp file_1.txt file_2.txt /d/gitbash2/group_27/folder_4
+
+Найти файл по имени: 
+find -name file1.txt
+./folder_3/file1.txt
+
+Просмотреть содержимое в реальном времени (команда grep) изучите как она работает:
+grep -r 1
+folder_3/file1.txt:11111111
+
+Вывести несколько первых строк из текстового файла:
+head file1.txt
+11111111
+22222222
+33333333
+44444444
+55555555
+66666666
+77777777
+88888888
+99999999
+00000000
+
+Вывести несколько последних строк из текстового файла: 
+tail file1.txt
+aaaaaaaa
+bbbbbbbb
+cccccccc
+dddddddd
+ffffffff
+iiiiiiii
+jjjjjjjj
+hhhhhhhh
+gggggggg
+rrrrrrrr
+
+Просмотреть содержимое длинного файла (команда less) изучите как она работает:
+less file1.txt
+11111111
+22222222
+33333333
+44444444
+55555555
+66666666
+77777777
+88888888
+99999999
+00000000
+aaaaaaaa
+bbbbbbbb
+cccccccc
+dddddddd
+ffffffff
+iiiiiiii
+jjjjjjjj
+hhhhhhhh
+gggggggg
+rrrrrrrr
+
+Вывести дату и время:
+data
+=========
+Задание *
+Отправить http запрос на сервер
+http://162.55.220.72:5005/terminal-hw-request:
+curl "http://162.55.220.72:5005/terminal-hw-request"
+"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+
+Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13:
+nano script1.sh
+
+#!/bin/bash
+
+cd folder_1
+mkdir folder_3 folder_4 folder_5
+cd folder_3
+touch file1.txt file2.txt file3.txt file1.json file2.json
+mkdir folder_3 folder_4 folder_5
+ls -la
+mv file1.txt file_1.txt /d/gitbash2/group_27/folder_3
+
+Ctrl+x-сохранить
